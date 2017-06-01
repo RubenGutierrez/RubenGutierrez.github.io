@@ -1,0 +1,84 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	padding:0;
+	border:0;  
+	background-image: url("foindo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.encabezado{
+	color: white;
+	height: 200px;
+	width:100%;
+	margin:0;
+	padding:0;
+	border:0; 
+	font-family: 'Ubuntu Condensed', sans-serif;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color:black;
+}
+.titulo{
+	color: white;
+	text-align: center;
+	height: 150px;
+	margin: 0;
+	padding:0;
+	border:0;
+	
+}
+.menu{
+	text-align: center;
+	height: 50px;
+	margin: 0;
+	padding:0;
+	border:0;
+}
+
+.contenedor{
+	z-index: 1;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.contenido{
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 50%;
+	margin:auto;
+}
+
+.capaTrabajos{
+	width: 75%;
+	margin: auto;
+}
+
+.capaTrabajos::before {
+  display:block;
+  height:200px; /* fixed header height*/
+	content:"";
+}
+
+.menu a{
+    color: white; 
+    background-color: transparent; 
+    text-decoration: none;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+	font-size: 150%;
+}
